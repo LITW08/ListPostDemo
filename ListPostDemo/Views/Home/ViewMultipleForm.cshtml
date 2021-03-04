@@ -1,0 +1,71 @@
+﻿<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <form method="post" action="/home/addmultiplefoods">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" name="items[0].name" placeholder="Name" class="form-control" />
+                        </td>
+                        <td>
+                            <input type="text" name="items[0].price" placeholder="Price" class="form-control" />
+                        </td>
+                        <td>
+                            <input type="text" name="items[0].caloriecount" placeholder="Calories" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="items[1].name" placeholder="Name" class="form-control" />
+                        </td>
+                        <td>
+                            <input type="text" name="items[1].price" placeholder="Price" class="form-control" />
+                        </td>
+                        <td>
+                            <input type="text" name="items[1].caloriecount" placeholder="Calories" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="items[2].name" placeholder="Name" class="form-control" />
+                        </td>
+                        <td>
+                            <input type="text" name="items[2].price" placeholder="Price" class="form-control" />
+                        </td>
+                        <td>
+                            <input type="text" name="items[2].caloriecount" placeholder="Calories" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="items[3].name" placeholder="Name" class="form-control" />
+                        </td>
+                        <td>
+                            <input type="text" name="items[3].price" placeholder="Price" class="form-control" />
+                        </td>
+                        <td>
+                            <input type="text" name="items[3].caloriecount" placeholder="Calories" class="form-control" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-danger btn-lg btn-block">Add All</button>
+        </form>
+    </div>
+    <div class="col-md-8 offset-md-2 mt-5">
+        <form method="post" action="/home/postints">
+            <input type="text" name="numbers[0]" placeholder="Number 0" class="form-control" />
+            <input type="text" name="numbers[1]" placeholder="Number 1" class="form-control" />
+            <input type="text" name="numbers[2]" placeholder="Number 2" class="form-control" />
+            <input type="text" name="numbers[3]" placeholder="Number 3" class="form-control" />
+            <button class="btn btn-danger btn-lg btn-block">Submit Numbers</button>
+        </form>
+    </div>
+</div>
